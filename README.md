@@ -13,21 +13,6 @@ Ensure you have the following installed on your local machine:
 - SSH key pair for EC2
 - Docker
 
-## Project Structure
-```
-terraform-ansible-docker/
-├── ansible/
-│   ├── docker_deployment.yml  # Ansible playbook to install Docker and deploy the container
-│   ├── inventory.ini           # Inventory file (generated dynamically)
-├── terraform/
-│   ├── main.tf                 # Terraform script for EC2 instance and security group
-│   ├── variables.tf            # Terraform variables (if needed)
-│   ├── outputs.tf              # Outputs like EC2 public IP
-│   ├── .gitignore              # Ignore Terraform state files
-├── deploy.sh                   # Deployment script
-├── README.md                    # Documentation
-```
-
 ## Deployment Steps
 
 ### 1. Clone the Repository
